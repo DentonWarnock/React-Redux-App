@@ -13,7 +13,11 @@ const Kanye = props => {
             {props.isLoading ? 
                 <div className="loading">loading data...</div> 
                 : 
-                <div className="quote">{props.quote}</div>}
+                props.quote !== "" ?
+                <div className="quote">{props.quote}</div>
+                :
+                null
+            }
         </>
     )
 };
