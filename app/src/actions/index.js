@@ -4,6 +4,7 @@ export const KANYE_LOAD_START = "KANYE_LOAD_START";
 export const KANYE_LOAD_SUCCESS = "KANYE_LOAD_SUCCESS";
 export const KANYE_LOAD_FAILURE = "KANYE_LOAD_FAILURE";
 
+
  export const getKanyeData = () => {
      return function(dispatch) {
         console.log("actions, dispatch", dispatch)
