@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import Kanye from "./components/Kanye";
+
 import './App.css';
+
+const imageSource = "https://media.pitchfork.com/photos/5db1d9974bb5ca0008bc72bd/2:1/w_790/Kanye-West.jpg"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Kanye West Quotes</h1>
+      <img src={imageSource} alt="Kanye West"></img>
+      <Kanye />
     </div>
   );
 }
